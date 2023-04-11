@@ -17,7 +17,6 @@ const app = createApp({
 			for (i = 0; i < this.numMail; i++) {
 				axios.get(this.basePath + "random/mail").then((response) => {
 						email = response.data.response;
-						console.log(email);
 						this.emails.push(email);
 					}
 
